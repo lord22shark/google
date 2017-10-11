@@ -1,7 +1,7 @@
 # google
 A Facade to use Google Authentication API
 
-This is a facade for using gapi. I consider myself, the available examples a little bit boring and less reusable... not sou much intuitive. For this I wrote this file to help using gapi for authentication and so on in another projects.
+This is a facade for using gapi. I consider the available examples a little bit boring and less reusable... not so much intuitive. For this I wrote this file to help me using gapi for authentication and so on in another projects.
 
 > REMEMBER (for me [LOL]) Add the whole process (or link to a how to) of filling the Google requirements, step by step.
 
