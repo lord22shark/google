@@ -66,6 +66,10 @@
 
 					thiz.setSigninStatus();
 
+				}).catch(function (error) {
+
+					__callback(error);
+
 				});
 
 			}.bind(thiz));
