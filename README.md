@@ -24,7 +24,7 @@ var foo = new Google({
 	],
 	clientId: '...',
 	scope: 'https://www.googleapis.com/auth/admin.directory.user.readonly https://www.googleapis.com/auth/drive https://www.googleapis.com/auth/calendar https://www.googleapis.com/auth/gmail.send profile email',
-}, function (user, authorized, authorizationToken) {
+}, function (user, authorized, authorizationToken, authInstance) {
 
 	if (authorized !== undefined && authorizationToken !== undefined) {
 
@@ -66,6 +66,11 @@ foo.getUser();
  * Returns the authorization token (String)
  */
 foo.getAuthorizationToken();
+
+/**
+ * Returns the configuration used in constructor (Object)
+ */
+foo.getConfiguration();
 
 /**
  * Returns if scope is authorized or not (Boolean)

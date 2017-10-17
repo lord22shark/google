@@ -106,7 +106,7 @@
 
 					this.googleAuthInstance.signIn().then(function (authenticatedUser) {
 
-						__callback(this.user, this.authorized, this.authorizationToken);
+						__callback(this.user, this.authorized, this.authorizationToken, this.googleAuthInstance);
 
 					}.bind(this)).catch(function (error) {
 
@@ -116,7 +116,7 @@
 
 				} else {
 
-					__callback(this.user, this.authorized, this.authorizationToken);
+					__callback(this.user, this.authorized, this.authorizationToken, this.googleAuthInstance);
 
 				}
 
@@ -148,6 +148,15 @@
 		this.getAuthorizationToken = function () {
 
 			return this.authorizationToken;
+
+		};
+
+		/**
+		 *
+		 */
+		this.getConfiguration = function () {
+
+			return configuration;
 
 		};
 
