@@ -1,0 +1,14 @@
+{
+	"name": "google",
+	"version": "1.0.0",
+	"description": "A Facade to use Google Authentication API",
+	"main": "src/index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [
+		"facade", "google", "googleapis"
+	],
+	"author": "Jaime Daniel Corrêa Mendes",
+	"license": "ISC"
+}
